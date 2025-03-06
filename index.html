@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="./index.js" defer></script>
+
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Portfolio" />
+    <!-- TODO: add name -->
+    <title> Judy Alqabbani Portfolio</title>
+
+    <!-- Icons -->
+    <!-- TODO: add a suitable icon -->
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png">
+</head>
+
+<body>
+    <main>
+        <!-- Hero Header -->
+        <header id="heroHeader" class="hero-header">
+            <nav id="navBar" class="nav">
+                <div class="container">
+                    <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
+                        <span class="nav__hamburger-top"></span>
+                        <span class="nav__hamburger-center"></span>
+                        <span class="nav__hamburger-bottom"></span>
+                    </button>
+                    <ul id="navList" class="nav__list">
+                        <li class="nav__list-item">
+                            <a class="nav__list-link active" href="#heroHeader">&lt;Home &sol;&gt;</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#services">&lt;Services &sol;&gt;</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#works">&lt;Projects &sol;&gt;</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#contact">&lt;Contact &sol;&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="header__container container">
+                <div class="header__left">
+                    <!-- TODO: add name -->
+                    <span class="header__sup-text">Hello There! I am Judy Alqabbani</span>
+                    <h1 class="header__title">
+                        <span class="header__title-1" data-role="FLUTTER">Software</span>
+                        <span class="header__title-2" data-role="DEVELOPER">Engineer</span>
+                    </h1>
+
+                    <p class="header__msg">As a software engineer and Flutter developer, I build high-performance,
+                        user-friendly applications with clean, efficient
+                        code. Passionate about creating seamless experiences, I focus on scalable solutions that drive
+                        innovation and business
+                        success.</p>
+                    <!-- TODO: add cv drive link -->
+                    <a href="#" target="_blank" class="header__resume">Download CV</a>
+                </div>
+                <div class="header__right">
+                    <img src="./assets/illustrations/header.svg" alt="Header section illustration" />
+                </div>
+            </section>
+            <span class="header__bg"></span>
+        </header>
+
+        <!-- Services -->
+        <section id="services" class="section container">
+            <h2 class="section__title">Services</h2>
+
+            <div class="service-cards">
+
+                <article class="service-card__box">
+                    <span class="service-card__illustration">
+                        <img src="./assets/services/design.svg" alt="Design Illustration" />
+                    </span>
+                    <h3 class="service-card__title">Design</h3>
+                    <p class="service-card__msg">I specialize in crafting beautiful and intuitive mobile apps that
+                        deliver both aesthetic appeal and seamless usability,
+                        ensuring smooth performance and an outstanding user experience.</p>
+                    <span class="service-card__bg"></span>
+                </article>
+                <article class="service-card__box">
+                    <span class="service-card__illustration">
+                        <img src="./assets/services/developing.svg" alt="Deploy Illustration" />
+                    </span>
+                    <h3 class="service-card__title">Development</h3>
+                    <p class="service-card__msg"> I offer mobile app development services, carefully tailored to
+                        align with your unique needs and vision as an
+                        independent professional, ensuring high-quality and user-centric solutions.</p>
+                    <span class="service-card__bg"></span>
+                </article>
+                <article class="service-card__box">
+                    <span class="service-card__illustration">
+                        <img src="./assets/services/support.svg" alt="Support Illustration" />
+                    </span>
+                    <h3 class="service-card__title">Deployment</h3>
+                    <p class="service-card__msg"> I am an expert in deploying all kinds of Flutter apps to the Play
+                        Store and App Store, ensuring seamless releases,
+                        compliance, and top performance across platforms.
+                    </p>
+                    <span class="service-card__bg"></span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sample Works -->
+        <section id="works" class="section container">
+            <h2 class="section__title">My Projects</h2>
+            <div id="projectsContainer" class="works"></div>
+
+            <!-- Template for project cards -->
+            <template id="project-template">
+                <article class="work">
+                    <span class="work__img-box">
+                        <img class="work__img" src="" alt="" />
+                    </span>
+                    <h3 class="work__title"></h3>
+                    <span class="work__date"></span>
+                    <ul class="work__description"></ul>
+                    <span class="work__badges">
+                        <a class="work__badge playStore" href="" target="_blank">Play Store</a>
+                        <a class="work__badge appStore" href="" target="_blank">App Store</a>
+                        <a class="work__badge website" href="" target="_blank">Website</a>
+                    </span>
+                </article>
+            </template>
+
+            <!-- 
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/damen.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Damen - Ikoniks</h3>
+                <span class="work__description">Developed two mobile applications connecting users with building
+                    service professionals, such as contractors, architects,
+                    and engineers.
+                    Designed and integrated a real-time chat feature, enabling seamless communication between
+                    users and service providers.
+                    Enhanced the user experience and interface, ensuring intuitive navigation and
+                    engagement.</span>
+                <span class="work__badges">
+                    <span class="work__badge">11/2023 - 10/2024</span>
+                    <a class="work__badge" href="https://wrteamdev.github.io/eRestro-Single-Vendor/application/">Play
+                        Store</a>
+                    <a class="work__badge" href="">App Store</a>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/trillion.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">100Trillion - Tradinos</h3>
+                <span class="work__description">Developed 100T, a mobile app tailored for collectors to explore
+                    and acquire rare banknotes, unique coins, and
+                    collectibles.
+                    Implemented a streamlined UI/UX to ensure effortless browsing and purchasing.
+                    Optimized performance for fast loading and seamless interactions.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article> 
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/luca.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Luca AI - Tradinos</h3>
+                <span class="work__description">Built Luca AI, a financial AI assistant app designed to simplify
+                    expense tracking and financial management.
+                    Integrated an AI-powered chatbot, allowing users to track expenses effortlessly.
+                    Implemented customizable reports, enabling users to visualize spending habits and
+                    insights.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/damen.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">RP - IXCoders</h3>
+                <span class="work__description">Developed a service marketplace app, connecting users with
+                    contractors, architects, and engineers.
+                    Integrated a real-time chat system to facilitate direct communication between users and
+                    service providers.
+                    Focused on usability and accessibility, ensuring a seamless experience for all users.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/damen.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Zeraa Center - IXCoders</h3>
+                <span class="work__description">Contributed to the Zeraa Center app, an e-commerce platform for
+                    agricultural equipment and accessories.
+                    Implemented a dynamic pricing system, allowing users to monitor price changes and trends.
+                    Ensured a smooth shopping experience, optimizing app performance and navigation.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/damen.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Pazar in - IXCoders</h3>
+                <span class="work__description">
+                    Helped develop an e-commerce platform, enabling users to list, promote, and sell products
+                    and services.
+                    Designed and integrated category-based filtering, allowing for effective product discovery.
+                    Focused on performance optimization for a smooth browsing experience.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/damen.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Compassty - We Can</h3>
+                <span class="work__description">Led the development of Compassty, an app that allows users to
+                    create and share personalized addresses.
+                    Implemented features for categorizing and organizing locations, enhancing searchability.
+                    Ensured a user-friendly design, making address management effortless.
+                </span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/damen.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Bright Life - We Can</h3>
+                <span class="work__description">
+                    Spearheaded the development of Bright Life, a service booking app that connects users with
+                    various providers.
+                    Authored technical documentation, streamlining the development and deployment process.
+                    Focused on scalability and maintainability, ensuring long-term app success.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/damen.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">eMenu - Plansters</h3>
+                <span class="work__description">
+                    Developed eMenu, a mobile and web-based platform that enables users to browse digital
+                    restaurant menus.
+                    Created two versions (mobile app and website) for a cross-platform experience.
+                    Ensured a seamless and responsive UI, allowing for quick and intuitive navigation.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/damen.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">MOJ - Plansters</h3>
+                <span class="work__description">
+                    Contributed to the enhancement and deployment of a delivery application on Google Play
+                    Store.
+                    Optimized the app for high performance and fast delivery services.
+                    Implemented updates to meet evolving market demands and improve customer experience.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/damen.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">SmartDeen - Solunyx</h3>
+                <span class="work__description">
+                    Led the development and maintenance of SmartDeen Classic, a mobile companion app for the
+                    SmartDeen Classic Clock,
+                    providing a seamless digital experience for Islamic practices.
+                    Implemented features such as prayer time notifications, Quran recitations, Islamic
+                    calendars, and customizable alerts,
+                    enhancing the spiritual experience for users.
+                    Optimized app performance and user interface to ensure a smooth and engaging user experience
+                    across different devices.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/tayar.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Tayar - Solunyx</h3>
+                <span class="work__description">
+                    Designed and developed an energy monitoring and control system that allows users to manage
+                    electricity regulators and
+                    system readings efficiently.
+                    Integrated real-time data tracking, remote control capabilities, and automated alerts,
+                    improving the reliability and
+                    accuracy of energy management.
+                    Worked closely with hardware and backend teams to ensure seamless integration between the
+                    mobile application and energy
+                    devices.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/iman-smart-azan.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Iman Smart Athan - Solunyx</h3>
+                <span class="work__description">
+                    Enhanced and optimized the Iman Smart Athan application, focusing on performance
+                    improvements, UI/UX refinements, and
+                    feature expansions.
+                    Developed and implemented new functionalities, including prayer time automation, athan
+                    notifications, and personalized
+                    Islamic content.
+                    Ensured a highly responsive and intuitive user experience by optimizing app architecture and
+                    refining interactions.
+                </span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/smart-athan.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Smart Athan - Solunyx</h3>
+                <span class="work__description">
+                    Contributed to the enhancement of the Smart Athan app, improving its core functionalities
+                    and user engagement features.
+                    Assisted in refining the app’s notification system, real-time athan alerts, and seamless
+                    synchronization with external
+                    devices.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/mazad.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Yalla Mazad - WeCan</h3>
+                <span class="work__description">
+                    Designed and developed a real-time auction platform using Flutter, providing a smooth
+                    bidding experience for users.
+                    Integrated Google Pay, Apple Pay, and Firebase Firestore, ensuring secure transactions and
+                    seamless payment processing.
+                    Implemented real-time bid tracking, push notifications, and dynamic price updates, enhancing
+                    user engagement.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/damen.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Alma Chat - Future Code</h3>
+                <span class="work__description">
+                    Played a key role in the development of Alma Chat, a real-time messaging and social
+                    application with advanced
+                    communication features.
+                    Integrated instant messaging, voice and video calls, e-payments, and multimedia sharing,
+                    offering a robust digital
+                    communication solution.
+                    Ensured high app stability and responsiveness by optimizing network requests, background
+                    services, and data
+                    synchronization.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/alassel.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Al Aseel Keys - Plansters</h3>
+                <span class="work__description">
+                    Designed and developed Al Aseel Keys a mobile application tailored for managing and purchasing
+                    high-quality security
+                    and access control solutions.
+                    Built a dynamic UI/UX to enhance customer interaction and simplify product navigation.
+                    Implemented real-time data synchronization and efficient backend solutions for optimal
+                    performance.</span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>
+            <article class="work">
+                <span class="work__img-box">
+                    <img src="./assets/works/batra.png" alt="My Work 1" />
+                </span>
+                <h3 class="work__title">Batra - Plansters</h3>
+                <span class="work__description">
+                    Led the development of the Batra mobile application, a digital platform for one of Iraq’s
+                    leading lighting solution
+                    providers.
+                    Engineered a user-friendly interface for browsing and purchasing indoor and outdoor lighting
+                    products, ensuring a
+                    seamless shopping experience.
+                    Integrated a robust product catalog and inventory management system to align with the company's
+                    global standards.
+                </span>
+                <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+            </article>--->
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section container">
+            <h2 class="section__title">Let's Connect!</h2>
+            <div class="contact">
+                <form class="contact__form" action="https://formsubmit.co/bisher.hasani@gmail.com" method="POST"
+                    target="_blank">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Request">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="contact__field-wrapper">
+                        <label for="contactNameTxt">Name:</label>
+                        <input id="contactNameTxt" name="name" type="text" placeholder="What's your name?" required />
+                    </div>
+                    <div class="contact__field-wrapper">
+                        <label for="contactDescriptionTxt">Message:</label>
+                        <textarea id="contactDescriptionTxt" name="message" placeholder="Let's connect!"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="contact__submit-btn">Submit</button>
+                </form>
+
+                <span class="contact__illustration">
+                    <img src="./assets/illustrations/connect.svg" alt="Group of people connecting with each other" />
+                </span>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <!-- <footer class="footer">
+            Template made with ❤️ by <a href="https://github.com/Finestwork" target="_blank"
+                class="footer__link">Kapitan Heneral</a>
+        </footer> -->
+    </main>
+</body>
+
+</html>
