@@ -651,7 +651,7 @@ body {
 .contact__field-wrapper textarea {
   font-size: 1.6rem;
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--color-dark);
   border-radius: 5px;
   background-color: transparent;
   outline: none;
